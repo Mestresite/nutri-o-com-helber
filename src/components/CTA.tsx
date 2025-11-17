@@ -20,19 +20,23 @@ export const CTA = () => {
               size="lg" 
               variant="cta"
               className="gap-3 text-lg"
-              onClick={() => window.open(WHATSAPP_URL, '_blank')}
+              asChild
             >
-              <MessageCircle className="w-6 h-6" />
-              Agendar pelo WhatsApp
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-6 h-6" />
+                Agendar pelo WhatsApp
+              </a>
             </Button>
             
             <Button 
               size="lg" 
               className="gap-3 text-lg bg-white text-primary hover:bg-white/90"
-              onClick={() => window.open(WHATSAPP_URL, '_blank')}
+              asChild
             >
-              <Phone className="w-6 h-6" />
-              (32) 99992-2371
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <Phone className="w-6 h-6" />
+                (32) 99992-2371
+              </a>
             </Button>
           </div>
           

@@ -34,10 +34,12 @@ export const Hero = () => {
               size="lg" 
               variant="cta"
               className="gap-3"
-              onClick={() => window.open(WHATSAPP_URL, '_blank')}
+              asChild
             >
-              <MessageCircle className="w-5 h-5" />
-              Agendar Consulta
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-5 h-5" />
+                Agendar Consulta
+              </a>
             </Button>
             
             <Button 
